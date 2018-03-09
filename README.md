@@ -17,6 +17,10 @@ It might be a good idea to add restriction for the image size due to the fact lo
 
 Could be replaced with [React Native Fetch API](https://facebook.github.io/react-native/docs/network.html) to any backend API.
 
+### Testing
+
+I will add some test in close future. Yeah I know TDD...
+
 ### Additional note
 
 Why [React](https://reactjs.org/)? Because I like it :-) It's easy funn and simple to learn/use. Perfect for small SPA apps like this, but also a good and solid solution for huge applications.
