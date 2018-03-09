@@ -33,13 +33,10 @@ export default class Header extends React.Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/about/">About</NavLink>
-              </NavItem>
-              <NavItem>
                 <NavLink href="/contact/">Contact</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink target="_blank" href="https://github.com/Sobol">Github</NavLink>
+                <NavLink target="_blank" href="https://github.com/Sobol/react-spa-form">Github</NavLink>
               </NavItem>
             </Nav>
           </Collapse>

@@ -4,6 +4,7 @@ import About from './About';
 import Header from './Header'
 import Footer from './Footer'
 import Main from './Main'
+import Profile from './Profile'
 import Contact from './Contact'
 
 class App extends Component {
@@ -11,9 +12,10 @@ class App extends Component {
     return (
       <div>
         <Header />
-        <Route path="/" component={Main}/>
-        <Route path="/About" component={About}/>
-        <Route path="/Contact" component={Contact}/>
+        <Route path="/edit" component={Main}/>
+        <Route path="/new" component={Main}/>
+        <Route path="/profile" component={Profile}/>
+        <Route path="/contact" component={Contact}/>
         <Footer />
       </div>
     );

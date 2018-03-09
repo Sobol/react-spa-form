@@ -60,3 +60,15 @@ footer p {
   to { transform: rotate(360deg); }
 }
 
+#avatar {
+  width: 256px;
+  height: 256px;
+}
+
+#travolta {
+  text-align: center;
+}
+
+#travolta img {
+  max-width: 100%;
+}
