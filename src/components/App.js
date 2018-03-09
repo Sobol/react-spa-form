@@ -6,8 +6,6 @@ import Footer from './Footer'
 import Main from './Main'
 import Contact from './Contact'
 
-import './../styles/App.css';
-
 class App extends Component {
   render() {
     return (

@@ -27,9 +27,7 @@ export default class Header extends React.Component {
     return (
       <header className="App-header">
         <Navbar fixed="top" color="dark" dark expand="md">
-          <a href="https://reactjs.org" className="navbar-left" target="_blank">
-            <img src={logo} className="App-logo" alt="logo" />
-          </a>
+          <img src={logo} className="App-logo" alt="logo" />
           <NavbarBrand href="/">React SPA</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
@@ -41,7 +39,7 @@ export default class Header extends React.Component {
                 <NavLink href="/contact/">Contact</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="https://github.com/Sobol">Github</NavLink>
+                <NavLink target="_blank" href="https://github.com/Sobol">Github</NavLink>
               </NavItem>
             </Nav>
           </Collapse>
