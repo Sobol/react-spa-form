@@ -10,11 +10,12 @@ import Contact from './Contact'
 class App extends Component {
   render() {
     let cachedState = localStorage.getItem('mySubmitedData');
+    let redirectToNew = !cachedState && !window.location.pathname.match(/contact/);
     return (
       <div>
         <Header />
         { cachedState && <Redirect to="/profile"/> }
-        { !cachedState && <Redirect to="/new"/> }
+        { redirectToNew && <Redirect to="/new"/> }
         <Route path="/edit" component={Main}/>
         <Route path="/new" component={Main}/>
         <Route path="/profile" component={Profile}/>
