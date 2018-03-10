@@ -9,8 +9,8 @@ import Contact from './Contact'
 
 class App extends Component {
   render() {
-    let cachedState = localStorage.getItem('mySubmitedData');
-    let redirectToNew = !cachedState && !window.location.pathname.match(/contact/);
+    let cachedState = localStorage.getItem('mySubmitedData') && (!window.location.pathname == "/profile" || window.location.pathname == "/");
+    let redirectToNew = !cachedState && window.location.pathname == "/";
     return (
       <div>
         <Header />
